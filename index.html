@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Marí Zampa</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Marí Zampa</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+    <div class="section__pic-container">
+        <img class="profile-circle" src="./assets/assets/profile pic.jpeg" alt="Profile Picture">
+    </div>
+
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Marí Zampa</h1>
+        <p class="section__text__p2">Mechanical Engineer</p>
+
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/assets/Mari Zampa RESUME.pdf', '_blank')">
+                Download Resume
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/assets/linkedin.png" alt="My Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/mari-zampa-580394244?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtgkbB4I8SwWNA7zjOHBM1Q%3D%3D/'">
+            <img src="./assets/assets/github.png" alt="My GitHub" class="icon" onclick="location.href='https://www.linkedin.com/in/mari-zampa-580394244?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BtgkbB4I8SwWNA7zjOHBM1Q%3D%3D/'">
+         </div>
+
+    </div>
+    </section>
+    <section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/assets/profile pic.jpeg" alt="Profile Picture" class="about-pic">
+        </div>
+
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/assets/experience.png" class="icon" alt="Experience icon">
+                    <h3>Work experience</h3>
+                    <p>Stanford Shape Lab resercher <br>Stanford Solar Car mechanical designer</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/assets/education.png" class="icon" alt="Education icon">
+                    <h3>Education</h3>
+                    <p>Stanford University <br> B.S. Mechanical Engineering</p>
+                </div>
+            </div>
+
+            <div class="text-container">
+                <p>
+                    Hello! I'm Marí Zampa, a Mechanical Engineering student at Stanford University with a passion for
+                    robotics, 3D modeling, and coding
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img src="./assets/assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+</section>
+
+    <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="experience-details-container">
+        <div class="about-containers">
+
+            <!-- Programming & Controls -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Programming & Controls</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Python</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>MATLAB</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Arduino</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>C++</h3>
+                            
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- CAD & Simulation -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">CAD &amp; Simulation</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Fusion 360</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Onshape</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>SolidWorks</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Luminary Cloud</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>ANSYS Fluent</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>HyperMesh</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>OptiStruct</h3>
+                            
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Fabrication -->
+            <div class="details-containers">
+                <h2 class="experience-sub-title">Fabrication</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>CNC machining</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>3D printing</h3>
+                           
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Laser cutting</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Soldering</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Sand casting</h3>
+                            
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/assets/checkmark.png" alt="Skill icon" class="icon" />
+                        <div>
+                            <h3>Welding</h3>
+                            
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="projects">
+  <p class="section__text__p1">Browse My</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="projects-scroll">
+      <!-- 1. Stanford Solar Car Project -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/Screenshot 2025-11-29 at 21.33.29.png"
+            alt="Stanford Solar Car Aerobody"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Stanford Solar Car Project</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-solarcar-repo'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-solar'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+
+      <!-- 2. Lever-Actuated Mechanism -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/Lever actuated mechanism.jpeg"
+            alt="Lever-Actuated Mechanism"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Lever-Actuated Mechanism</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('assets/assets/Polish and Finalize Mechanism.pdf', '_blank')"
+
+          >
+            Download Finalized Report
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-lever'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Handwriting Haptic Wristband -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/iter1.3.png"
+            alt="Handwriting Haptic Wristband"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Handwriting Haptic Wristband</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-wristband-repo'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-wristband'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+
+      <!-- 4. Snake Game -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/snake game2.jpeg"
+            alt="Joystick-controlled Snake Game"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Snake Game</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-snake-repo'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-snake'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+
+      <!-- 5. Wing Test -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/435C459B-30AA-4AA4-8010-819CFD9A0298_1_102_o.jpeg"
+            alt="Wing Test in Subsonic Tunnel"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Wing Test</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-wing-repo'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-wing'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+      <!-- 6. Correlation Between Ski Pole Design and Buckling -->
+      <div class="details-containers color-container">
+        <div class="article-container">
+          <img
+            src="./assets/assets/mainest.png"
+            alt="Correlation Between Ski Pole Design and Buckling"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Correlation Between Ski Pole Design and Buckling</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/your-snake-repo'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn btn-color-1 project-btn"
+            onclick="location.href='#project-ski-pole'"
+          >
+            Details
+          </button>
+        </div>
+      </div>
+      <!-- Mechanical Measurements -->
+    <div class="details-containers color-container">
+      <div class="article-container">
+        <img
+          src="./assets/assets/machine 1.png"
+          alt="Mechanical Measurements Labs"
+          class="project-img"
+        />
+      </div>
+
+      <h2 class="project-title">Mechanical Measurements</h2>
+
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/your-measurements-repo'"
+        >
+          GitHub
+        </button>
+
+        <button
+          class="btn btn-color-1 project-btn"
+          onclick="location.href='#project-measurements'"
+        >
+          Details
+        </button>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+<section id="project-solar" class="project-detail">
+  <h1 class="title">Stanford Solar Car – Aerobody & CFD</h1>
+
+  <!-- HERO IMAGE -->
+  <div class="project-hero">
+    <img src="./assets/assets/official.png" alt="Solar car aerobody hero render">
+    <!-- optional second hero image -->
+    <!-- <img src="./assets/assets/solar-hero-2.png" alt="Solar car track photo"> -->
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    Worked on the aerobody design and aerodynamic performance of the Stanford Solar Car, focusing on
+    low-drag surfacing, crosswind stability, and packaging constraints. Used CAD and CFD to iterate on
+    body shape, canopy placement, and underbody flow to improve efficiency for long-distance racing.
+  </p>
+
+  <!-- CREATIVE SOLUTION -->
+  <h2>Creative Solution</h2>
+  <p class="detail-text">
+    Balanced ultra-low drag with real-world constraints: driver visibility, solar array area, structural
+    hardpoints, and manufacturability in carbon fiber. Built a workflow that connects surface modeling to
+    meshing and solver setup, so design decisions in CAD translate directly to validated CFD results.
+  </p>
+
+  <!-- AEROBODY DESIGN -->
+  <h2>Aerobody Design</h2>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/isometric.png" alt="Solar car side view CAD">
+      <figcaption>Side view of the solar car aerobody highlighting low-profile frontal area.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso1.png" alt="Solar car top view CAD">
+      <figcaption>Top view showing canopy placement and solar array packaging.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso2.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso3.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso4.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso5.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iso6.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+    <figure>
+      <img src="./assets/assets/iso7.png" alt="Solar car rear / diffuser design">
+      <figcaption>Rear and diffuser geometry tuned for clean wake and stability.</figcaption>
+    </figure>
+    
+  </div>
+
+  <!-- CFD ANALYSIS -->
+  <h2>CFD Analysis</h2>
+  <p class="detail-text">
+    Set up external aerodynamics CFD to evaluate drag, lift, and yaw behavior. Ran mesh-independence
+    studies, refined boundary layers for <em>y+</em> targets, and compared configurations to guide design
+    decisions.
+  </p>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/Luminary.png" alt="Pressure distribution CFD">
+      <figcaption>Surface pressure distribution showing high- and low-pressure regions.</figcaption>
+    </figure>
+
+   
+
+    <figure>
+      <img src="./assets/assets/drag.png" alt="Wake structure visualization">
+      <figcaption>Wake structure visualization used to refine rear geometry and diffuser.</figcaption>
+    </figure>
+  </div>
+
+  <!-- LUMINARY / TOOLING WORKFLOW -->
+   <!-- 
+  <h2>Simulation Workflow (Luminary)</h2>
+  <p class="detail-text">
+    Used Luminary Cloud to quickly explore design trades, adjust ride height and crosswind angles, and
+    share results with the broader team through web-based post-processing and snapshots.
+  </p>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/solar car.png" alt="Luminary Cloud setup">
+      <figcaption>Luminary setup with domain, symmetry plane, and rotating wheels.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/solar car.png" alt="Luminary results dashboard">
+      <figcaption>Results dashboard tracking drag coefficient across design variants.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/solar car.png" alt="Crosswind / yaw case">
+      <figcaption>Crosswind case used to study yaw stability and side-force behavior.</figcaption>
+    </figure>
+  </div>
+</section>
+*//
+-->
+<section id="project-lever" class="project-detail">
+  <h1 class="title">Braille’s Bells – Lever-Actuated Machine</h1>
+
+  <!-- HERO + PROTOTYPE IMAGES -->
+  <div class="project-hero">
+    <img src="./assets/assets/lever1.png" alt="Lever mechanism hero">
+    <img src="./assets/assets/lever 2.png" alt="Prototype view">
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    Designed and built a fully mechanical door-announcement system driven by a falling-weight powertrain.
+    Users pull a tactile lever to activate the machine, then choose between two Braille buttons (1-ring or 2-ring)
+    to decide how the bell rings each rotation.
+  </p>
+
+  <!-- CREATIVE SOLUTION -->
+  <h2>Creative Solution</h2>
+  <p class="detail-text">
+    The project focused on affordance and accessibility: the lever shape, material contrast, and Braille labeling
+    allow low-vision users to intuitively operate the machine by touch alone. Internally, the mechanism uses
+    a regulated escapement, a 4:1 gear reduction, a clutch-actuated bevel gear selector, and a cam-and-follower
+    bell striker.
+  </p>
+
+  <!-- DESIGN DETAILS GRID -->
+  <h2>Design Details</h2>
+<div class="gallery-3col">
+  <figure>
+    <img src="./assets/assets/design1.png" alt="Design detail 1">
+    <figcaption>Initial cardboard prototype of machine that would ring two bells</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/design2.png" alt="Design detail 2">
+    <figcaption>3-dimensional representation of cam and follower critical mechanism.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/design3.png" alt="Design detail 3">
+    <figcaption>First working iteration of full machine</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/design4.png" alt="Design detail 4">
+    <figcaption> Force diagrams and calculations for the initial prototype</figcaption>
+  </figure>
+</div>
+
+  <!-- OPTIONAL: FEA RESULTS -->
+  <h2>Structural & Motion Analysis (FEA)</h2>
+<div class="gallery-3col">
+  <figure>
+    <img src="./assets/assets/fea1.png" alt="FEA sample 1">
+    <figcaption> FEA and redesign of the front-most part of the frame.
+</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/fea2.png" alt="FEA sample 2">
+    <figcaption>FEA and redesign of back-most frame.
+</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/fea3.png" alt="FEA sample 3">
+    <figcaption>FEA and redesign of side of frame</figcaption>
+  </figure>
+</div>
+
+  <!-- OPTIONAL: CAD EVOLUTION -->
+  <h2>CAD Development</h2>
+<div class="gallery-3col">
+  <figure>
+    <img src="./assets/assets/cad1.png" alt="CAD version 1">
+    <figcaption>Final CAD assembly of “Braille’s Bells”</figcaption>
+  </figure>
+
+  <figure>
+    <img src="./assets/assets/cad2.png" alt="CAD version 2">
+    <figcaption>Final CAD element breakdown</figcaption>
+  </figure>
+  <figure>
+  <iframe
+    src="https://youtu.be/o0PMoZ_RIcA?si=jGR0zBQwnV8-WhuN"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <figcaption>CAD walkthrough</figcaption>
+</figure>
+
+</div>
+</section>
+
+
+<section id="project-wristband" class="project-detail">
+  <h1 class="title">Handwriting Haptic Wristband</h1>
+
+  <!-- HERO + PROTOTYPE IMAGES -->
+  <div class="project-hero">
+    <img src="./assets/assets/iter1.3.png" alt="Handwriting haptic wristband overview">
+  
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    Built a series of wearable wristband prototypes that provide real-time vibration feedback based on handwriting accuracy.
+    Iterated from passive mechanical resistance to fully programmable multi-motor haptics using ERM motors, an audio exciter,
+    and finally DRV2605L LRAs driven through a TCA9548A I²C multiplexer. The system connects to a Node.js + Express web app
+    that streams stylus error data, visualizes error, velocity, and pressure, and keeps feedback latency under 50&nbsp;ms.
+  </p>
+
+  <!-- CREATIVE SOLUTION -->
+  <h2>Creative Solution</h2>
+  <p class="detail-text">
+    The project explores how wearable haptics can support handwriting learning when visual feedback alone is not enough,
+    especially for children with motor or visual difficulties. By mapping drawing error into directional wrist vibrations,
+    the wristband turns abstract performance metrics into intuitive physical cues, building muscle memory and enabling
+    more accessible, multi-sensory handwriting practice.
+  </p>
+
+  <!-- Iteration 1: Passive haptic feedback -->
+  <h2>Iteration 1: Passive Haptic Feedback</h2>
+  <p class="detail-text">
+    The first prototype used a passive rubber-band linkage between the pen and iPad to add mechanical resistance as the pen
+    moved. Users completed a point-to-point task while the band increased tension with displacement, demonstrating that
+    simple physical resistance can influence handwriting accuracy. However, the force range was small, there was no
+    programmability, and it was only tested with two participants.
+  </p>
+
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/passive1.png" alt="Rubber-band linkage prototype on iPad">
+      <figcaption>Rubber-band linkage prototype applying passive resistance during handwriting on the iPad.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/force.png" alt="Force characterization plot">
+      <figcaption>Measured relationship between API force value (0–1) and actual force on the iPad, showing value 1 ≈ 5&nbsp;N.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iter1.3.png" alt="Passive resistance test configuration">
+      <figcaption>Early test configuration used to evaluate passive resistance during point-to-point movements.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Iteration 2: Active Haptics: ERM Vibration Motors -->
+  <h2>Iteration 2: Active Haptics – ERM Vibration Motors</h2>
+  <p class="detail-text">
+    The second prototype introduced active haptics using three ERM vibration motors on a Velcro wristband, driven by an
+    Arduino Nano 33 IoT and N-MOSFETs. PWM control varied vibration intensity based on error, so the wristband vibrated
+    more strongly as the pen moved away from the target. While this added real-time programmable feedback, the motors were
+    too weak for clear directional cues and had a slow response time of about 100&nbsp;ms.
+  </p>
+
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/iter2.1.png" alt="ERM wristband with control board">
+      <figcaption>ERM wristband with three embedded vibration motors connected to the Arduino control board.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iter 2.2.png" alt="ERM wristband worn during testing">
+      <figcaption>Wristband worn during testing, showing motor placement and wiring along the strap.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/fea3.png" alt="Physical prototype layout for ERM tests">
+      <figcaption>Prototype layout used while evaluating ERM-based error feedback during drawing tasks.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Iteration 3: Audio Exciter Wristband -->
+  <h2>Iteration 3: Audio Exciter Wristband</h2>
+  <p class="detail-text">
+    The third prototype replaced ERMs with a Dayton audio exciter mounted on a wristband and driven by an XY-502 amplifier.
+    This setup produced much stronger, smoother vibration and supported combined haptic, visual, and auditory feedback using
+    a Stevens’ law mapping (error<sup>1.05</sup>). Despite the powerful sensation, the exciter remained non-directional and
+    low-frequency, limiting its ability to communicate stroke direction.
+  </p>
+
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/iter3.1.png" alt="Audio exciter wristband on wrist">
+      <figcaption>Wrist-mounted audio exciter providing strong broadband vibration feedback during handwriting.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iter3.2.png" alt="Exciter wristband layout">
+      <figcaption>Velcro wristband layout with the exciter integrated into a compact wearable form factor.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/iter3.3.png" alt="Amplifier and control electronics">
+      <figcaption>XY-502 amplifier and control electronics used to drive the audio exciter from error signals.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Iteration 4: Multi-LRA Wristband -->
+  <h2>Iteration 4: Multi-LRA Wristband</h2>
+  <p class="detail-text">
+    The final prototype used four DRV2605L-driven LRA motors connected through a TCA9548A I²C multiplexer, giving each
+    motor its own channel and fully independent control. This configuration enabled directional patterns (for example,
+    an “L” drawn as top → bottom → left → right), stroke-like sequences, and error-based feedback where more motors and
+    higher intensity signaled larger deviations. With &lt;50&nbsp;ms response time and compact hardware, this wristband
+    delivered both high-fidelity and directional haptic guidance.
+  </p>
+
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/iter4.1.png" alt="Multi-LRA wristband with four motors">
+      <figcaption>Four-motor LRA wristband with DRV2605L drivers and TCA9548A multiplexer wiring around the wrist.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/fea2.png" alt="LRA placement around wrist">
+      <figcaption>Wristband layout showing placement of LRAs around the arm to create directional cues.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/fea3.png" alt="Hardware configuration for multi-LRA testing">
+      <figcaption>Hardware configuration used during multi-LRA testing and development of vibration patterns.</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<section id="project-snake" class="project-detail">
+  <h1 class="title">Joystick-Controlled LED Matrix</h1>
+
+  <!-- HERO IMAGE (use your favorite overview shot) 
+  <div class="project-hero">
+    <img src="./assets/assets/snake game2.jpeg" alt="Joystick and LED matrix snake game">
+  </div>
+-->
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    Created a joystick-controlled Snake game on an LED matrix to explore how physical movement
+    maps to voltage changes and real-time visual feedback. Moving the joystick steers the snake
+    across the matrix, with the game resetting automatically after a game over.
+  </p>
+
+  <!-- CREATIVE SOLUTION -->
+  <h2>Creative Solution</h2>
+  <p class="detail-text">
+    The game uses the joystick’s two potentiometers—one per axis—to translate stick position into
+    analog voltages. By reading those voltages and mapping them to grid positions, the code updates
+    the snake’s direction smoothly while handling drift, dead zones, and stable motion so the
+    controls feel predictable and responsive.
+  </p>
+
+  
+
+  <!-- IMAGES GRID (3 images, same style as your Design Details / FEA grids) -->
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/snake game2.jpeg" alt="Full joystick and LED matrix setup">
+      <figcaption>Full hardware setup with joystick, Arduino, and LED matrix.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/snake game2.jpeg" alt="LED matrix during gameplay">
+      <figcaption>LED matrix showing the Snake game in progress.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/snake game2.jpeg" alt="Joystick wiring detail">
+      <figcaption>Close-up of joystick wiring and signal routing to the Arduino.</figcaption>
+    </figure>
+  </div>
+
+  <!-- DETAILS (mirroring your “Design Details” section) -->
+  <h2>Design Details</h2>
+  <p class="detail-text">
+    <strong>Objective:</strong> Understand how the joystick’s voltage outputs can be used to drive a
+    multi-LED display and implement real-time game logic.<br>
+    <strong>Implementation:</strong> Wired the joystick’s 5&nbsp;V, GND, Xout, and Yout pins to Arduino
+    analog inputs, then used <code>analogRead()</code> and scaling to map voltages to positions on the LED
+    matrix.<br>
+    <strong>Challenges:</strong> Compensated for stick drift by recalibrating the resting voltage and adding
+    a dead zone so the snake only moves when the joystick is intentionally pushed.<br>
+    <strong>Outcome:</strong> A responsive LED-matrix Snake game that updates cleanly and restarts on its
+    own when the player loses or moves the joystick again.
+  </p>
+
+  <!-- OPTIONAL: link to video, matching your doc -->
+  <!-- <p class="detail-text">
+    <a href="YOUR_VIDEO_LINK_HERE" target="_blank">Video demo</a>
+  </p> -->
+</section>
+
+
+<section id="project-wing" class="project-detail">
+  <h1 class="title">Wing Test</h1>
+  <p class="detail-text">
+    Designed and built a small airfoil and load-cell stand for the ME subsonic wind tunnel to measure lift
+    across angles of attack. Fabricated the wing and mounting hardware, calibrated the vertical load cell
+    with known weights, and ran tests while stepping through AoA. The lift–AoA curve showed the expected
+    linear region up to stall, validating the force-measurement setup. 
+  </p>
+</section>
+
+
+</body>
+</html>
+<section id="project-ski-pole" class="project-detail">
+  <h1 class="title">Analyzing Ski Pole Design and Buckling</h1>
+
+  <!-- HERO IMAGES -->
+  <div class="project-hero">
+    <img src="./assets/assets/straight.png" alt="Straight ski pole prototype">
+    <img src="./assets/assets/bent.png" alt="Bent ski pole prototype">
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    Designed, analyzed, and tested two ski pole geometries—a straight pole and a bent pole—to study
+    how design influences critical buckling force. Built life-sized CAD models in Fusion 360, then
+    created scaled 3D-printed prototypes to compare analytical calculations, FEA, and physical
+    testing results.
+  </p>
+
+  <!-- DESIGN & PROTOTYPING -->
+  <h2>Design &amp; Prototyping</h2>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/straight.png" alt="Straight ski pole CAD">
+      <figcaption>Life-sized straight ski pole CAD model.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/bent.png" alt="Bent ski pole CAD">
+      <figcaption>Life-sized bent ski pole CAD model inspired by slalom poles.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/scaled.png" alt="Ski pole 3D printed prototypes">
+      <figcaption>Scaled PLA prototypes (0.1833×) for physical buckling tests.</figcaption>
+    </figure>
+  </div>
+
+  <!-- ANALYTICAL & FEA ANALYSIS -->
+  <h2>Analytical &amp; FEA Analysis</h2>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/fbd.png" alt="Free-body diagram of ski pole">
+      <figcaption>Hand-calculation setup for Euler buckling of the straight pole.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/full.png" alt="Life-size FEA of straight and bent poles">
+      <figcaption>Structural buckling FEA of life-sized straight and bent poles in Fusion 360.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/scaled_fea.png" alt="Scaled FEA comparison">
+      <figcaption>Scaled straight vs. bent pole FEA showing reduced buckling load for the bent design.</figcaption>
+    </figure>
+  </div>
+
+  <!-- PHYSICAL TESTING -->
+  <h2>Physical Testing</h2>
+  <div class="gallery-3col">
+    <figure>
+      <img src="./assets/assets/setup.png" alt="Buckling test setup">
+      <figcaption>Test rig with scale, clamp, and pinned-style base constraint.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/bent_test.png" alt="Bent pole buckling test">
+      <figcaption>Bent pole at the onset of buckling under axial load.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="./assets/assets/straight_test.png" alt="Straight pole buckling test">
+      <figcaption>Straight pole just before visible buckling during testing.</figcaption>
+    </figure>
+  </div>
+
+  <!-- RESULTS & TAKEAWAYS -->
+  <h2>Results &amp; Takeaways</h2>
+  <p class="detail-text">
+    Across analytical calculations, FEA, and physical tests, the straight pole consistently
+    withstood a higher critical buckling force than the bent pole. Comparing these three methods
+    highlighted how idealized assumptions (geometry, boundary conditions, and material models)
+    differ from real-world behavior, and reinforced how strongly length and effective
+    end-conditions (K-value) control buckling performance.
+  </p>
+
+  <!-- FINAL PROTOTYPE -->
+  <!-- POSTER & REPORT BUTTONS -->
+  <section class="document-buttons">
+    <h2>Project Documents</h2>
+
+    <!-- POSTER & REPORT BUTTONS -->
+      <div class="btn-container" style="margin-top: 3rem;">
+        <a class="btn btn-color-1" href="./assets/assets/Copy of ME 80 Poster.pdf" target="_blank">
+          Poster
+        </a>
+
+        <a class="btn btn-color-1" href="./assets/assets/Analyzing the Correlation Between Ski Pole Design and Buckling.pdf" target="_blank">
+          Report
+        </a>
+      </div>
+
+  </section>
+<section id="project-measurements" class="project-detail">
+  <h1 class="title">Mechanical Measurements</h1>
+
+  <!-- HERO IMAGES -->
+  <div class="project-hero">
+    <img src="./assets/assets/me149-setup-1.png" alt="Measurement setup 1">
+    <img src="./assets/assets/me149-setup-2.png" alt="Measurement setup 2">
+  </div>
+
+  <!-- SUMMARY -->
+  <h2>Summary</h2>
+  <p class="detail-text">
+    A collection of eight hands-on labs covering core mechanical measurement techniques:
+    oscilloscopes, function generators, accelerometers, indentation, strain analysis, 
+    force measurements, digital image correlation (DIC), and material testing. 
+    These labs combined hardware instrumentation, LabVIEW/MATLAB analysis, 
+    and experimental mechanics principles to extract accurate physical data from real systems.
+  </p>
+
+  <!-- LAB BUTTONS -->
+  <h2>Lab Reports</h2>
+  <div class="btn-container" style="flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+
+    <!-- LAB 1 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/ME_149___Lab_1__Oscilloscope__Function_Generator__and_Multimeter__2_ (1).pdf"
+       target="_blank">
+      Lab 1 — Oscilloscope & Function Generator
+    </a>
+
+    <!-- LAB 2 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/ME_149___Lab_2_Accelerometer__3_ (1).pdf"
+       target="_blank">
+      Lab 2 — Accelerometer Characterization
+    </a>
+
+    <!-- LAB 3 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/Lab_3__Mari_Zampa (1).pdf"
+       target="_blank">
+      Lab 3 — Signal Conditioning
+    </a>
+
+    <!-- LAB 4 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/Lab 4 (4).pdf"
+       target="_blank">
+      Lab 4 — Frequency Response & Filtering
+    </a>
+
+    <!-- LAB 5 (Poster) -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/Date_ 5_14_2025 (1).pdf"
+       target="_blank">
+      Lab 5 — Material Testing Poster
+    </a>
+
+    <!-- LAB 6 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/lab 6_me149 (1).pdf"
+       target="_blank">
+      Lab 6 — Tensile Testing (ABS & TPU)
+    </a>
+
+    <!-- LAB 7 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/lab7__4_ (2).pdf"
+       target="_blank">
+      Lab 7 — Digital Image Correlation (DIC)
+    </a>
+
+    <!-- LAB 8 -->
+    <a class="btn btn-color-1"
+       href="./assets/assets/lab8 (2).pdf"
+       target="_blank">
+      Lab 8 — System Identification
+    </a>
+
+  </div>
+</section>
+
+</section>
