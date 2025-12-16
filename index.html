@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,7 @@
     <div class="logo">Marí Zampa</div>
     <div class="hamburger-menu">
       <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -42,43 +41,36 @@
 
   <main>
     <!-- HERO / PROFILE -->
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="profile-circle" src="./assets/assets/profile pic.jpeg" alt="Profile Picture" />
-      </div>
+    <section id="profile" class="hero">
+      <div class="hero-wrap">
+        <div class="hero-card">
+          <div class="hero-card__inner">
+            <div class="hero-photo">
+              <img class="profile-circle" src="./assets/assets/profile pic.jpeg" alt="Portrait of Marí Zampa" />
+            </div>
 
-      <div class="section__text">
-        <p class="section__text__p1">Mechanical Engineering • Stanford University</p>
-        <h1 class="hero-title">Marí Zampa</h1>
-        <p class="section__text__p2">Aeros, mechanisms, and human–device interaction.</p>
+            <div class="hero-copy">
+              <p class="hero-kicker">Mechanical Engineering at Stanford University</p>
+              <h1 class="hero-title">Marí Zampa</h1>
+              <p class="hero-sub">Mechanical design focused on vehicle structures, aerodynamics, mechanisms and haptics</p>
 
-        <div class="btn-container">
-          <button
-            class="btn btn-primary"
-            onclick="window.open('./assets/assets/Mari Zampa RESUME.pdf', '_blank')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-ghost" onclick="location.href='#projects'">
-            View Projects
-          </button>
+              <div class="btn-container">
+                <button class="btn btn-primary" onclick="window.open('./assets/assets/MARI ZAMPA RESUME_2025_december.pdf', '_blank')">
+                  Download Resume
+                </button>
+                <button class="btn btn-ghost" onclick="location.href='#projects'">
+                  View Projects
+                </button>
+              </div>
+
+              <div id="socials-container">
+              
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div id="socials-container">
-          <img
-            src="./assets/assets/linkedin.png"
-            alt="My LinkedIn"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mari-zampa-580394244'"
-          />
-          <img
-            src="./assets/assets/github.png"
-            alt="My GitHub"
-            class="icon"
-            onclick="location.href='https://github.com/mari-zampa'"
-          />
-        </div>
-      </div>
+        
     </section>
 
     <!-- ABOUT -->
@@ -88,7 +80,7 @@
 
       <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/assets/profile pic.jpeg" alt="Profile Picture" class="about-pic" />
+          <img src="./assets/assets/profile2.png" alt="Profile Picture" class="about-pic" />
         </div>
 
         <div class="about-details-container">
@@ -96,32 +88,22 @@
             <div class="details-card">
               <img src="./assets/assets/experience.png" class="icon" alt="Experience icon" />
               <h3>Experience</h3>
-              <p>
-                Stanford Shape Lab researcher<br />
-                Stanford Solar Car mechanical designer
-              </p>
+              <p>Stanford Shape Lab research<br />Stanford Solar Car mechanical design</p>
             </div>
             <div class="details-card">
               <img src="./assets/assets/education.png" class="icon" alt="Education icon" />
               <h3>Education</h3>
-              <p>
-                B.S. Mechanical Engineering<br />
-                Stanford University
-              </p>
+              <p>Bachelor of Science in Mechanical Engineering<br />Stanford University</p>
             </div>
           </div>
 
           <div class="text-container">
             <p>
-              I design and build mechanical systems that live at the intersection of
-              aerodynamics, mechanisms, and haptics. My work spans solar car aerobody
-              design, lever-driven mechanisms, and a multi-LRA wristband for guided
-              handwriting.
+              I am a mechanical engineering student at Stanford and I love working on hardware. I design, build, and test mechanical systems from early CAD to physical validation. 
             </p>
-            <p>
-              I enjoy taking projects from early sketches and CAD to simulation,
-              fabrication, and validation in the lab.
-            </p>
+              </p>
+              My work includes structural parts, packaging constrained components, and prototyping, across projects ranging from vehicle scale hardware to smaller mechanical builds.
+              </p>
           </div>
         </div>
       </div>
@@ -135,43 +117,24 @@
       <div class="experience-details-container">
         <div class="skills-grid">
 
-          <!-- Programming & Controls -->
           <div class="skill-card">
-            <h3 class="skill-title">Programming &amp; Controls</h3>
+            <h3 class="skill-title">Programming</h3>
             <div class="skill-list">
-              <span>Python</span>
-              <span>MATLAB</span>
-              <span>Arduino</span>
-              <span>JavaScript</span>
-              <span>HTML &amp; CSS</span>
-              <span>C++</span>
+              <span>Python</span><span>MATLAB</span><span>Arduino</span><span>C and C++</span><span>JavaScript</span><span>HTML and CSS</span>
             </div>
           </div>
 
-          <!-- CAD & Simulation -->
           <div class="skill-card">
-            <h3 class="skill-title">CAD &amp; Simulation</h3>
+            <h3 class="skill-title">CAD and Simulation</h3>
             <div class="skill-list">
-              <span>Fusion 360</span>
-              <span>Onshape</span>
-              <span>SolidWorks</span>
-              <span>Luminary Cloud</span>
-              <span>ANSYS Fluent</span>
-              <span>HyperMesh</span>
-              <span>OptiStruct</span>
+              <span>Fusion 360</span><span>Onshape</span><span>SolidWorks</span><span>ANSYS Fluent</span><span>HyperMesh</span><span>OptiStruct</span><span>Luminary Cloud</span>
             </div>
           </div>
 
-          <!-- Fabrication -->
           <div class="skill-card">
             <h3 class="skill-title">Fabrication</h3>
             <div class="skill-list">
-              <span>CNC machining</span>
-              <span>3D printing</span>
-              <span>Laser cutting</span>
-              <span>Soldering</span>
-              <span>Sand casting</span>
-              <span>Welding</span>
+              <span>CNC</span><span>3D printing</span><span>Laser cutting</span><span>Soldering</span><span>Sand casting</span><span>Welding</span>
             </div>
           </div>
 
@@ -186,298 +149,224 @@
 
       <div class="projects-scroll">
 
-        <!-- Stanford Solar Car Project -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/Screenshot 2025-11-29 at 21.33.29.png"
-              alt="Stanford Solar Car Aerobody"
-            />
+            <img src="./assets/assets/Screenshot 2025-11-29 at 21.33.29.png" alt="Stanford Solar Car" />
           </div>
           <div class="project-body">
-            <h3>Stanford Solar Car Project</h3>
-            <p>Aerobody design, chassis constraints, and CFD for World Solar Challenge.</p>
+            <h3>Stanford Solar Car</h3>
+            <p>Aerodynamic design and structures</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-solar'"
-            >
-              View case study
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-solar'">View case study</button>
           </div>
         </article>
 
-        <!-- Lever-Actuated Mechanism -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/Lever actuated mechanism.jpeg"
-              alt="Lever-Actuated Mechanism"
-            />
+            <img src="./assets/assets/Lever actuated mechanism.jpeg" alt="Braille’s Bells mechanism" />
           </div>
           <div class="project-body">
-            <h3>Braille’s Bells – Lever Machine</h3>
-            <p>Weight-driven escapement and cam system for touch-based interaction.</p>
+            <h3>Lever Actuated Machine</h3>
+            <p>Mechanism design and structural validation.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-lever'"
-            >
-              View case study
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-lever'">View case study</button>
           </div>
         </article>
 
-        <!-- Haptic Wristband -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/iter1.3.png"
-              alt="Handwriting Haptic Wristband"
-            />
+            <img src="./assets/assets/iter1.3.png" alt="Handwriting haptic wristband" />
           </div>
           <div class="project-body">
-            <h3>Handwriting Haptic Wristband</h3>
-            <p>Four-LRA wearable translating pen error into directional cues.</p>
+            <h3>Haptic Wristband</h3>
+            <p>Wearable hardware and real time haptic feedback.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-wristband'"
-            >
-              View case study
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-wristband'">View case study</button>
           </div>
         </article>
 
-        <!-- Snake / Joystick Game -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/snake game2.jpeg"
-              alt="Joystick-controlled Snake Game"
-            />
+            <img src="./assets/assets/snake game2.jpeg" alt="Joystick snake game" />
           </div>
           <div class="project-body">
-            <h3>Joystick-Controlled Snake</h3>
-            <p>Embedded Snake game on an 8×8 LED matrix with analog joystick input.</p>
+            <h3>Joystick Snake</h3>
+            <p>Embedded game design on an LED matrix.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-joystick'"
-            >
-              View project
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-joystick'">View project</button>
           </div>
         </article>
 
-        <!-- Wing Test -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/435C459B-30AA-4AA4-8010-819CFD9A0298_1_102_o.jpeg"
-              alt="Wing Test"
-            />
+            <img src="./assets/assets/435C459B-30AA-4AA4-8010-819CFD9A0298_1_102_o.jpeg" alt="Wing test in tunnel" />
           </div>
           <div class="project-body">
             <h3>Wing Test</h3>
-            <p>Lift–AoA characterization using a subsonic tunnel and load cell.</p>
+            <p>Lift measurement and low Reynolds analysis.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-wing'"
-            >
-              View summary
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-wing'">View summary</button>
           </div>
         </article>
 
-        <!-- Ski Pole Buckling -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/mainest.png"
-              alt="Ski Pole Buckling Study"
-            />
+            <img src="./assets/assets/mainest.png" alt="Ski pole buckling study" />
           </div>
           <div class="project-body">
-            <h3>Ski Pole Buckling Study</h3>
-            <p>Analytical, FEA, and physical testing of straight vs. bent designs.</p>
+            <h3>Ski Pole Buckling</h3>
+            <p>Analytical buckling and physical testing.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-ski-pole'"
-            >
-              View case study
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-ski-pole'">View case study</button>
           </div>
         </article>
 
-        <!-- Mechanical Measurements -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/machine 1.png"
-              alt="Mechanical Measurements"
-            />
+            <img src="./assets/assets/machine 1.png" alt="Mechanical measurements" />
           </div>
           <div class="project-body">
             <h3>Mechanical Measurements</h3>
-            <p>Eight labs in sensing, DIC, signal conditioning, and system ID.</p>
+            <p>Signal conditioning and experimental methods.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-measurements'"
-            >
-              View labs
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-measurements'">View labs</button>
           </div>
         </article>
 
-        <!-- Bench-Top Wind Tunnel -->
         <article class="project-card">
           <div class="project-thumb">
-            <img
-              src="./assets/assets/windtun.png"
-              alt="Bench-Top Wind Tunnel"
-            />
+            <img src="./assets/assets/windtun.png" alt="Bench top wind tunnel" />
           </div>
           <div class="project-body">
-            <h3>Bench-Top Wind Tunnel</h3>
-            <p>Compact tunnel with honeycomb and acrylic contraction for aero tests.</p>
+            <h3>Bench Top Wind Tunnel</h3>
+            <p>Compact tunnel for small scale aero testing.</p>
           </div>
           <div class="project-footer">
-            <button
-              class="btn btn-ghost-sm"
-              onclick="location.href='#project-wind-tunnel'"
-            >
-              View case study
-            </button>
+            <button class="btn btn-ghost-sm" onclick="location.href='#project-wind-tunnel'">View case study</button>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!-- PROJECT DETAIL SECTIONS -->
     <!-- SOLAR CAR -->
     <section id="project-solar" class="project-detail">
       <div class="case-header">
         <p class="section__label">Case Study</p>
-        <h2 class="section__title">Stanford Solar Car – Aerobody &amp; CFD</h2>
+        <h2 class="section__title">Stanford Solar Car</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/official.png" alt="Solar car aerobody hero render" />
-      </div>
-
-      <div class="two-col">
-        <div>
-          <h3>Objective</h3>
-          <p class="detail-text">
-            Design an ultra-low-drag aerobody for the Stanford Solar Car that remains stable in
-            crosswinds while meeting visibility, packaging, and carbon-fiber manufacturing
-            constraints for the World Solar Challenge.
-          </p>
-        </div>
-        <div>
-          <h3>Role</h3>
-          <p class="detail-text">
-            Aerobody design and CFD: canopy, diffuser, and underbody refinement;
-            chassis constraint modeling; drag, lift, and yaw performance studies.
-          </p>
-        </div>
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/official.png" alt="Solar car render" />
+          <figcaption class="hero-cap">Stanford Solar Car</figcaption>
+        </figure>
       </div>
 
       <div class="two-col">
-        <div>
-          <h3>Challenges</h3>
-          <p class="detail-text">
-            Tight WSC size and visibility rules, crosswind stability requirements, realistic
-            carbon-fiber split lines, and reliable CAD→CFD translation for moving-floor simulations.
-          </p>
-        </div>
-        <div>
-          <h3>Approach</h3>
-          <p class="detail-text">
-            Parametric surface exploration, moving-floor CFD at 28&nbsp;m/s, refined boundary
-            layers and y+, and pressure/wake analysis to guide canopy and diffuser geometry.
-          </p>
-        </div>
+      <div>
+        <h3>Overview</h3>
+        <p class="detail-text">
+          Designed structural interfaces and aerobody components. Used CAD and focused FEA to refine geometry, strength, and fit.
+        </p>
       </div>
 
-      <h3>Aerobody Design</h3>
+      <div>
+        <h3>Key Work</h3>
+        <ul class="detail-list">
+          <li>Structural interfaces and mounting hardpoints</li>
+          <li>Aerobody component design</li>
+          <li>CAD geometry refinement</li>
+          <li>Focused FEA</li>
+        </ul>
+      </div>
+    </div>
+
+
+      <h3>Rear Suspension Structural Hardpoint</h3>
       <div class="gallery-3col">
         <figure>
-          <img src="./assets/assets/isometric.png" alt="Overall aerobody shape" />
-          <figcaption>Overall aerobody topology with three-wheel layout.</figcaption>
+          <img src="./assets/assets/solar_hardpoint_cad.png" alt="Rear suspension hardpoint CAD" />
+          <figcaption>CAD of the control arm</figcaption>
         </figure>
+
         <figure>
-          <img src="./assets/assets/iso1.png" alt="Top view" />
-          <figcaption>Top view showing canopy, solar array, and planform.</figcaption>
+          <img src="./assets/assets/structural buckling.png" alt="Buckling mode shape" />
+          <figcaption>Buckling FEA for stiffness</figcaption>
         </figure>
+
         <figure>
-          <img src="./assets/assets/iso2.png" alt="Side profile" />
-          <figcaption>Side profile and rear diffuser angle.</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/assets/iso3.png" alt="Front view" />
-          <figcaption>Front view with body camber and width driven by regulations.</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/assets/iso4.png" alt="Underbody" />
-          <figcaption>Underbody and diffuser inlet for low-drag flow expansion.</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/assets/iso5.png" alt="Rear taper" />
-          <figcaption>Rear taper tuned to reduce base drag.</figcaption>
+          <img src="./assets/assets/static.png" alt="Static stress safety factor" />
+          <figcaption>Static FEA showing safety factor under suspension load</figcaption>
         </figure>
       </div>
 
-      <h3>CFD Analysis</h3>
-      <p class="detail-text">
-        CFD was used to track drag, lift, and yaw moment while comparing geometry variants.
-      </p>
-
+      <h3>Roll Cage</h3>
       <div class="gallery-2col">
         <figure>
-          <img src="./assets/assets/Luminary.png" alt="Pressure and streamlines" />
-          <figcaption>
-            Surface pressure and streamlines revealing separation regions and wake structure.
-          </figcaption>
+          <img src="./assets/assets/rollcage.png" alt="Roll cage CAD" />
+          <figcaption>Roll cage structure with mounting tabs.</figcaption>
         </figure>
+
         <figure>
-          <img src="./assets/assets/drag.png" alt="Drag convergence plot" />
-          <figcaption>
-            Drag-coefficient convergence during diffuser and aft-body trade studies.
-          </figcaption>
+          <img src="./assets/assets/rollcage2.png" alt="Roll cage integration" />
+          <figcaption>Roll cage integrated into the chassis.</figcaption>
         </figure>
       </div>
 
-      <h3>Chassis Constraints</h3>
-      <p class="detail-text">
-        A 3-wheel chassis model was built to define hardpoints, driver volume, and wheel track
-        limits. This set the envelope the aerobody could wrap around.
-      </p>
+      <h3>Chassis</h3>
+      <div class="gallery-2col">
+        <figure>
+          <img src="./assets/assets/solar_chassis_iso.png" alt="Chassis isometric" />
+          <figcaption>Chassis isometric view</figcaption>
+        </figure>
 
-      <div class="gallery-3col">
         <figure>
-          <img src="./assets/assets/chassis_iso.png" alt="Chassis isometric view" />
-          <figcaption>Chassis with driver cell, front frame, and rear track.</figcaption>
+          <img src="./assets/assets/solar_chassis_top.png" alt="Chassis top view" />
+          <figcaption>Chassis top view</figcaption>
         </figure>
+
         <figure>
-          <img src="./assets/assets/chassis_top.png" alt="Chassis top view" />
-          <figcaption>Top view with wheel track and steering envelope.</figcaption>
+          <img src="./assets/assets/solar_chassis_side.png" alt="Chassis side view" />
+          <figcaption>Chassis side view</figcaption>
         </figure>
+
         <figure>
-          <img src="./assets/assets/chassis_side.png" alt="Chassis side view" />
-          <figcaption>Side view defining canopy height and driver posture.</figcaption>
+          <img src="./assets/assets/rollcageandchassis.png" alt="Roll cage and chassis" />
+          <figcaption>Chassis and roll cage integration</figcaption>
+        </figure>
+      </div>
+
+      <h3>Molds</h3>
+      <div class="gallery-2col">
+        <figure>
+          <img src="./assets/assets/mold.png" alt="Composite mold" />
+          <figcaption>Composite mold isometric view</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./assets/assets/mold3.png" alt="Composite tooling detail" />
+          <figcaption>Composite mold side profile</figcaption>
+        </figure>
+      </div>
+
+      <h3>Aerobodies</h3>
+      <div class="gallery-2col">
+        <figure>
+          <img src="./assets/assets/iso1.png" alt="CFD visualization" />
+          <figcaption>Aerobody isometric view with canopy</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./assets/assets/iso4.png" alt="CFD iteration tracking" />
+          <figcaption>Side profile of the aerobody and canopy</figcaption>
         </figure>
       </div>
     </section>
@@ -486,46 +375,39 @@
     <section id="project-lever" class="project-detail">
       <div class="case-header">
         <p class="section__label">Case Study</p>
-        <h2 class="section__title">Braille’s Bells – Lever-Actuated Machine</h2>
+        <h2 class="section__title">Lever Actuated Machine</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/lever1.png" alt="Lever mechanism hero" />
-        <img src="./assets/assets/lever 2.png" alt="Prototype view" />
+      <div class="project-hero project-hero--two">
+        <figure>
+          <img src="./assets/assets/lever1.png" alt="Lever mechanism hero" />
+          <figcaption>Isometric view </figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/assets/lever 2.png" alt="Prototype view" />
+          <figcaption>Side view </figcaption>
+        </figure>
       </div>
 
       <div class="two-col">
         <div>
           <h3>Objective</h3>
-          <p class="detail-text">
-            Create a weight-driven, touch-actuated machine where users trigger one or two bells
-            through a lever, coordinated escapement, and cam system.
-          </p>
+          <p class="detail-text">Design a weight-driven, touch-actuated mechanism that delivers consistent, timed motion</p>
         </div>
         <div>
           <h3>Role</h3>
-          <p class="detail-text">
-            Full mechanical design: lever, escapement, drivetrain, frame, and analysis
-            (including FEA-based frame stiffening).
-          </p>
+          <p class="detail-text"> Mechanical design from concept through CAD, analysis, and final prototype.</p>
         </div>
       </div>
 
       <div class="two-col">
         <div>
           <h3>Challenges</h3>
-          <p class="detail-text">
-            Manage falling-weight power, synchronize escapement and cam profiles, and keep
-            the wooden frame stiff under repeated impacts from the striker.
-          </p>
+          <p class="detail-text">Mechanical design focused on impact loading, structural stiffness, and repeatable actuation</p>
         </div>
         <div>
           <h3>Approach</h3>
-          <p class="detail-text">
-            Built cardboard and wood prototypes, then refined the final CAD. Added an
-            escapement and clutch to control timing and used FEA to reduce deflection
-            at critical joints.
-          </p>
+          <p class="detail-text">Rapid prototyping, CAD refinement, and FEA analysis</p>
         </div>
       </div>
 
@@ -533,43 +415,43 @@
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/design1.png" alt="Cardboard prototype" />
-          <figcaption>Cardboard prototype to quickly test layout and ergonomics.</figcaption>
+          <figcaption>Initial cardboard prototype</figcaption>
         </figure>
         <figure>
-          <img src="./assets/assets/design2.png" alt="3D cam follower model" />
-          <figcaption>Cam–follower geometry that converts rotation into strikes.</figcaption>
+          <img src="./assets/assets/design2.png" alt="Cam follower model" />
+          <figcaption>Cam and follower critical mechanism</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/design3.png" alt="First full build" />
-          <figcaption>First full build integrating escapement, cam, and striker.</figcaption>
+          <figcaption>First working iteration of full machine</figcaption>
         </figure>
       </div>
 
-      <h3>Structural &amp; Motion Analysis</h3>
+      <h3>Structural Validation</h3>
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/FEA1.png" alt="Front frame FEA" />
-          <figcaption>Front frame deflection under load from the striker.</figcaption>
+          <figcaption> FEA and redesign of front frame </figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/FEA2.png" alt="Back frame FEA" />
-          <figcaption>Back frame stress guiding material thickness and bracing.</figcaption>
+          <figcaption>FEA and redesign of back frame</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/FEA3.png" alt="Side frame FEA" />
-          <figcaption>Side frame optimization around the cam shaft supports.</figcaption>
+          <figcaption>FEA and redesign of side frame</figcaption>
         </figure>
       </div>
 
-      <h3>CAD &amp; Final Assembly</h3>
+      <h3>CAD and Assembly</h3>
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/cad1.png" alt="Final CAD assembly" />
-          <figcaption>Final assembly, including drivetrain and structure.</figcaption>
+          <figcaption>Final CAD assembly</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/cad2.png" alt="Exploded CAD view" />
-          <figcaption>Exploded view highlighting subassemblies.</figcaption>
+          <figcaption>Final CAD element breakdown</figcaption>
         </figure>
         <figure>
           <iframe
@@ -578,7 +460,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <figcaption>CAD walkthrough of the complete system.</figcaption>
+          <figcaption>CAD walkthrough video</figcaption>
         </figure>
       </div>
     </section>
@@ -590,320 +472,271 @@
         <h2 class="section__title">Handwriting Haptic Wristband</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/iter1.3.png" alt="Haptic wristband overview" />
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/iter1.3.png" alt="Haptic wristband overview" />
+          <figcaption class="hero-cap">Wearable prototypes for directional guidance during handwriting tasks.</figcaption>
+        </figure>
       </div>
 
       <div class="two-col">
         <div>
           <h3>Objective</h3>
-          <p class="detail-text">
-            Build a wristband that turns handwriting error into real-time directional haptic
-            cues to support accuracy, motor learning, and accessibility.
-          </p>
+          <p class="detail-text">Convert pen error into real time haptic guidance.</p>
         </div>
         <div>
           <h3>Role</h3>
-          <p class="detail-text">
-            Hardware and software design across four iterations, web app for error tracking,
-            and vibration pattern design using DRV2605L-driven LRAs.
-          </p>
+          <p class="detail-text">Hardware, firmware, web interface, and haptic patterns.</p>
         </div>
       </div>
 
       <div class="two-col">
         <div>
           <h3>Challenges</h3>
-          <p class="detail-text">
-            Achieve clear directional cues with four motors, keep latency &lt; 50&nbsp;ms from
-            stylus to wrist, and maintain comfort and stability in a small wearable.
-          </p>
+          <p class="detail-text">Clear direction cues, low latency, and comfortable wear.</p>
         </div>
         <div>
           <h3>Approach</h3>
-          <p class="detail-text">
-            Mapped stylus error vectors into motor intensity and activation order, built a
-            low-latency streaming pipeline, and tested motor placement and patterns on the wrist.
-          </p>
+          <p class="detail-text">Map error vectors to motor sequences and iterate through prototypes.</p>
         </div>
       </div>
 
       <h3>Iterations</h3>
 
       <h4 class="sub-heading">Iteration 1 — Passive Linkage</h4>
-      <p class="detail-text">
-        A rubber-band linkage between pen and tablet surface created resistance proportional
-        to displacement. It proved that mechanical guidance helps but offered limited control.
-      </p>
+      <p class="detail-text">Mechanical guidance to validate the core interaction.</p>
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/passive1.png" alt="Passive prototype" />
-          <figcaption>Passive linkage used to introduce resistive force.</figcaption>
+          <figcaption>Passive linkage prototype.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/force.png" alt="Force plot" />
-          <figcaption>Force calibration mapping API value 1 to ≈5&nbsp;N.</figcaption>
+          <figcaption>Force calibration used for repeatable settings.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/iter1.3.png" alt="Passive setup" />
-          <figcaption>Bench setup for displacement–force experiments.</figcaption>
+          <figcaption>Bench test setup.</figcaption>
         </figure>
       </div>
 
       <h4 class="sub-heading">Iteration 2 — ERM Motors</h4>
-      <p class="detail-text">
-        Three ERM motors driven by PWM enabled real-time feedback but lacked the strength and
-        bandwidth for crisp directional cues.
-      </p>
-      <div class="project-hero">
+      <p class="detail-text">Vibration feedback enabled guidance, with limited directional clarity.</p>
+
+      <!-- centered, side by side -->
+      <div class="project-hero project-hero--two">
         <figure>
-          <img src="./assets/assets/iter2.1.png" alt="ERM band" />
-          <figcaption>ERM wristband with three small vibration motors.</figcaption>
+          <img src="./assets/assets/iter2.1.png" alt="ERM wristband" />
+          <figcaption>Three motor ERM wristband.</figcaption>
         </figure>
         <figure>
-          <img src="./assets/assets/iter 2.2.png" alt="ERM test" />
-          <figcaption>Prototype during early testing.</figcaption>
+          <img src="./assets/assets/iter 2.2.png" alt="ERM integration test" />
+          <figcaption>Early integration test.</figcaption>
         </figure>
       </div>
 
       <h4 class="sub-heading">Iteration 3 — Audio Exciter</h4>
-      <p class="detail-text">
-        A Dayton audio exciter and XY-502 amplifier provided stronger broadband vibration and
-        multi-modal cues but remained non-directional.
-      </p>
+      <p class="detail-text">Higher amplitude vibration, still not direction selective.</p>
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/iter3.1.png" alt="Exciter band" />
-          <figcaption>Exciter wristband with integrated amplifier.</figcaption>
+          <figcaption>Exciter based wristband.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/iter3.2.png" alt="Exciter mounting" />
-          <figcaption>Mounting strategy for comfortable wear.</figcaption>
+          <figcaption>Mounting approach for comfort and contact.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/iter3.3.png" alt="Exciter electronics" />
-          <figcaption>Electronics driving the exciter from real-time error signals.</figcaption>
+          <figcaption>Real-time tracking error during handwriting</figcaption>
         </figure>
       </div>
 
-      <h4 class="sub-heading">Iteration 4 — Multi-LRA Wristband</h4>
-      <p class="detail-text">
-        The final design uses four LRAs on independent DRV2605L channels to create stroke-like
-        sequences and directional patterns around the wrist.
-      </p>
-      <div class="project-hero">
+      <h4 class="sub-heading">Iteration 4 — Multi LRA Wristband</h4>
+      <p class="detail-text">Improved directionality using four LRAs and timed sequences.</p>
+
+      <!-- centered, side by side -->
+      <div class="project-hero project-hero--two">
         <figure>
-          <img src="./assets/assets/iter4.1.png" alt="Multi-LRA band" />
-          <figcaption>Four-motor LRA wristband with I²C multiplexer.</figcaption>
+          <img src="./assets/assets/iter4.1.png" alt="Multi LRA wristband" />
+          <figcaption>Four LRA wristband with I2C multiplexer.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/iter4.jpeg" alt="Wrist layout" />
-          <figcaption>Motor layout for up/down/left/right cues.</figcaption>
+          <figcaption>Motor placement for directional cues.</figcaption>
         </figure>
       </div>
 
       <div class="two-col">
         <div>
-          <h3>Future Work</h3>
-          <p class="detail-text">
-            Improve the wearable form factor, integrate battery and enclosure, and run user
-            studies to quantify stroke accuracy and learning effects.
-          </p>
+          <h3>Next Work</h3>
+          <p class="detail-text">Integrate enclosure and battery, then run user studies.</p>
         </div>
         <div>
-          <h3>Next Steps</h3>
-          <p class="detail-text">
-            Add onboard processing, wireless communication, and adaptive feedback models
-            driven by handwriting datasets.
-          </p>
+          <h3>System Direction</h3>
+          <p class="detail-text">On device processing and wireless data streaming.</p>
         </div>
       </div>
     </section>
 
     <!-- JOYSTICK / SNAKE -->
-<section id="project-joystick" class="project-detail">
-  <div class="case-header">
-    <p class="section__label">Project</p>
-    <h2 class="section__title">Joystick-Controlled LED Matrix</h2>
-  </div>
+    <section id="project-joystick" class="project-detail">
+      <div class="case-header">
+        <p class="section__label">Project</p>
+        <h2 class="section__title">Joystick Controlled LED Matrix</h2>
+      </div>
 
-  <div class="project-hero">
-    <img src="./assets/assets/main snake.JPG" alt="Joystick-controlled LED matrix hero view" />
-  </div>
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure hero-figure--small">
+          <img class="hero-img" src="./assets/assets/main snake.JPG" alt="Joystick controlled LED matrix hero view" />
+          <figcaption class="hero-cap">Embedded game on an LED matrix with joystick input.</figcaption>
+        </figure>
+      </div>
 
-  <div class="two-col">
-    <div>
+      <div class="two-col">
+        <div>
+          <h3>Overview</h3>
+          <p class="detail-text">Arduino Snake on an eight by eight LED matrix with analog joystick input.</p>
+        </div>
+        <div>
+          <h3>Key Work</h3>
+          <p class="detail-text">Filtering, dead zone logic, multiplexing, and a game state machine.</p>
+        </div>
+      </div>
+
+      <h3>Hardware</h3>
+      <div class="gallery-3col">
+        <figure>
+          <img src="./assets/assets/snake1.png" alt="Joystick LED matrix hardware" />
+          <figcaption>Microcontroller, matrix, and joystick integration.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./assets/assets/snake2.png" alt="Snake game on matrix" />
+          <figcaption>Gameplay on the LED matrix.</figcaption>
+        </figure>
+
+        <figure>
+          <iframe
+            src="https://drive.google.com/file/d/11fiCfmkelZsFAXukgkTuObXvEzv9fkKK/preview"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <figcaption>Gameplay demo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WING TEST -->
+    <section id="project-wing" class="project-detail">
+      <div class="case-header">
+        <p class="section__label">Project</p>
+        <h2 class="section__title">Wing Test</h2>
+      </div>
+
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/435C459B-30AA-4AA4-8010-819CFD9A0298_1_102_o.jpeg" alt="Wing test setup in the subsonic tunnel" />
+          <figcaption class="hero-cap">Test setup used to measure lift across angle of attack.</figcaption>
+        </figure>
+      </div>
+
       <h3>Overview</h3>
       <p class="detail-text">
-        Snake game implemented on an 8×8 LED matrix driven by an Arduino, with an analog
-        joystick controlling direction and speed.
+        Built a cambered airfoil and stand, then measured lift using a load cell amplifier and microcontroller readout.
       </p>
-    </div>
-    <div>
-      <h3>Key Work</h3>
+
+      <h3>Calibration</h3>
       <p class="detail-text">
-        Matrix multiplexing, joystick filtering and dead-zone logic, and Snake game state
-        machine including food spawning and collision detection.
+        Applied known weights, fit a load to voltage curve, and zeroed the system in tunnel for repeatable measurements.
       </p>
-    </div>
-  </div>
 
-  <h3>Hardware</h3>
-  <div class="gallery-3col">
-    <figure>
-      <img src="./assets/assets/snake1.png" alt="Joystick LED matrix hardware" />
-      <figcaption>Integrated board with Arduino, LED matrix, and joystick.</figcaption>
-    </figure>
+      <h3>Design and Hardware</h3>
+      <div class="gallery-3col">
+        <figure>
+          <img src="./assets/assets/test4.png" alt="Bench setup with stand and electronics" />
+          <figcaption>Lift versus angle of attack from wind tunnel testing</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/assets/test2.png" alt="Slotted airfoil sketch" />
+          <figcaption>Slotted airfoil concept</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/assets/test3.png" alt="Ribbed airfoil sketch" />
+          <figcaption>Ribbed airfoil internal structure</figcaption>
+        </figure>
+      </div>
 
-    <figure>
-      <img src="./assets/assets/snake2.png" alt="Snake game on matrix" />
-      <figcaption>Snake game running with joystick steering.</figcaption>
-    </figure>
+      <h3>Results</h3>
+      <p class="detail-text">
+        Low Reynolds effects reduced lift growth and led to earlier stall, highlighting scale sensitivity in tunnel testing.
+      </p>
 
-    <!-- VIDEO REPLACES THE WIRING IMAGE -->
-    <figure>
-      <iframe
-        src="https://drive.google.com/file/d/11fiCfmkelZsFAXukgkTuObXvEzv9fkKK/preview"
-        allow="autoplay"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
-      <figcaption>Live gameplay of the Snake game controlled with the analog joystick.</figcaption>
-    </figure>
-  </div>
-</section>
-
-
-<!-- WING TEST -->
-<section id="project-wing" class="project-detail">
-  <div class="case-header">
-    <p class="section__label">Project</p>
-    <h2 class="section__title">Wing Test – Subsonic Tunnel</h2>
-  </div>
-
-  <!-- HERO IMAGE -->
-  <div class="project-hero">
-    <img
-      src="./assets/assets/435C459B-30AA-4AA4-8010-819CFD9A0298_1_102_o.jpeg"
-      alt="Wing test setup in the subsonic tunnel"
-    />
-  </div>
-
-  <h3>Overview</h3>
-  <p class="detail-text">
-    Designed and built a small cambered airfoil and custom stand for a subsonic teaching
-    tunnel in AA 126. The wing was mounted to a load-measurement system using an Adafruit
-    Feather M4 microcontroller, an HX711 24-bit load cell amplifier, and a foil strain
-    gauge in a Wheatstone bridge, with an OLED screen showing live lift readings.
-  </p>
-
-  <h3>Calibration &amp; Setup</h3>
-  <p class="detail-text">
-    Before tunnel tests, we calibrated the strain-gauge system by applying known weights,
-    recording the corresponding voltage output, and fitting a load–voltage curve to convert
-    the measured signal into aerodynamic force. In the tunnel, we zeroed the system with
-    the wing installed so any decrease in measured load corresponded to lift.
-  </p>
-
-  <h3>Design &amp; Hardware</h3>
-  <div class="gallery-3col">
-    <figure>
-      <img src="./assets/assets/test4.png" alt="Bench setup with stand and electronics" />
-      <figcaption>
-        Full bench setup with servo-driven stand, load cell, and Feather M4 control electronics.
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/assets/test2.png" alt="Slots airfoil sketch" />
-      <figcaption>
-        Concept profile of the slotted, cambered airfoil used for the low-Reynolds-number study.
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/assets/test3.png" alt="Ribbed airfoil sketch" />
-      <figcaption>
-        Final ribbed internal structure supporting the thin outer membrane along the span.
-      </figcaption>
-    </figure>
-  </div>
-
-  <h3>Results &amp; Takeaways</h3>
-  <p class="detail-text">
-    Measured lift was much smaller than expected and did not show a clean linear increase
-    with angle of attack. The small span and chord put the wing at very low Reynolds numbers,
-    so it appeared to stall at low angles. The project highlighted how scale and Reynolds
-    number strongly affect whether classic lift–AoA behavior appears in tunnel data.
-  </p>
-
-  <div class="gallery-3col">
-    <figure>
-      <img src="./assets/assets/test1.png" alt="Measured lift versus angle of attack" />
-      <figcaption>
-        Measured lift versus angle of attack at three tunnel speeds, showing early stall behavior.
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/assets/test5.png" alt="Side view of wing in tunnel" />
-      <figcaption>
-        Side view of the airfoil mounted in the tunnel test section during a lift measurement run.
-      </figcaption>
-    </figure>
-    <figure>
-      <img src="./assets/assets/test6.png" alt="Oblique view of stand in tunnel" />
-      <figcaption>
-        Oblique view of the mounting stand and base inside the subsonic tunnel test section.
-      </figcaption>
-    </figure>
-  </div>
-</section>
+      <div class="gallery-3col">
+        <figure>
+          <img src="./assets/assets/test1.png" alt="Measured lift versus angle of attack" />
+          <figcaption>Wing test setup and electronics</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/assets/test5.png" alt="Side view of wing in tunnel" />
+          <figcaption>Wing mounted in the test section.</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/assets/test6.png" alt="Oblique view of stand in tunnel" />
+          <figcaption>Mounting stand inside the tunnel.</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <!-- SKI POLE BUCKLING -->
     <section id="project-ski-pole" class="project-detail">
       <div class="case-header">
         <p class="section__label">Case Study</p>
-        <h2 class="section__title">Analyzing Ski Pole Design and Buckling</h2>
+        <h2 class="section__title">Ski Pole Buckling Study</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/skipoles.png" alt="Straight ski pole prototype" />
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/skipoles.png" alt="Straight ski pole prototype" />
+          <figcaption class="hero-cap">Comparison of straight and bent geometries under compression.</figcaption>
+        </figure>
       </div>
 
       <h3>Summary</h3>
       <p class="detail-text">
-        Compared a straight and a bent ski pole design using analytical Euler buckling
-        calculations, Fusion 360 FEA, and 3D-printed prototypes. The goal was to understand
-        how geometry affects critical buckling load.
+        Compared straight and bent poles using Euler buckling, FEA, and scaled physical tests.
       </p>
 
-      <h3>Design &amp; Prototyping</h3>
+      <h3>Design and Prototyping</h3>
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/straight.png" alt="Straight ski pole CAD" />
-          <figcaption>Life-sized straight pole model.</figcaption>
+          <figcaption>Straight pole CAD.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/bent.png" alt="Bent ski pole CAD" />
-          <figcaption>Bent pole inspired by slalom designs.</figcaption>
+          <figcaption>Bent pole CAD.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/scaled.png" alt="Scaled prototypes" />
-          <figcaption>Scaled 3D-printed prototypes for testing.</figcaption>
+          <figcaption>Scaled prints used for testing.</figcaption>
         </figure>
       </div>
 
-      <h3>Analysis &amp; Testing</h3>
+      <h3>Analysis and Testing</h3>
       <div class="gallery-3col">
         <figure>
-          <img src="./assets/assets/fbd.png" alt="Free-body diagram" />
-          <figcaption>Analytical setup for Euler buckling of the straight pole.</figcaption>
+          <img src="./assets/assets/fbd.png" alt="Free body diagram" />
+          <figcaption>Euler buckling setup.</figcaption>
         </figure>
         <figure>
-          <img src="./assets/assets/full.png" alt="Life-size FEA" />
-          <figcaption>FEA comparison of straight and bent designs.</figcaption>
+          <img src="./assets/assets/full.png" alt="Life size FEA" />
+          <figcaption>FEA comparison of geometries.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/scaled_fea.png" alt="Scaled FEA" />
-          <figcaption>Scaled FEA matching the printed prototypes.</figcaption>
+          <figcaption>Scaled FEA aligned to printed parts.</figcaption>
         </figure>
       </div>
 
@@ -911,40 +744,26 @@
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/setup.png" alt="Buckling test setup" />
-          <figcaption>Test rig with clamp, base, and scale.</figcaption>
+          <figcaption>Test rig used for compression loading.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/bent_test.png" alt="Bent pole test" />
-          <figcaption>Bent pole at the onset of buckling.</figcaption>
+          <figcaption>Bent pole near buckling.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/straight_test.png" alt="Straight pole test" />
-          <figcaption>Straight pole just before visible buckling.</figcaption>
+          <figcaption>Straight pole near buckling.</figcaption>
         </figure>
       </div>
 
       <h3>Outcome</h3>
       <p class="detail-text">
-        Across methods, the straight pole consistently carried a higher critical load than
-        the bent pole. Comparing analysis, FEA, and experiments highlighted the importance
-        of effective length, boundary conditions, and geometric imperfections.
+        Straight geometry sustained higher critical loads across analysis and testing.
       </p>
 
       <div class="btn-container">
-        <a
-          class="btn btn-primary"
-          href="./assets/assets/Copy of ME 80 Poster.pdf"
-          target="_blank"
-        >
-          View poster
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/Analyzing the Correlation Between Ski Pole Design and Buckling.pdf"
-          target="_blank"
-        >
-          Read full report
-        </a>
+        <a class="btn btn-primary" href="./assets/assets/Copy of ME 80 Poster.pdf" target="_blank">View Poster</a>
+        <a class="btn btn-ghost" href="./assets/assets/Analyzing the Correlation Between Ski Pole Design and Buckling.pdf" target="_blank">Read Report</a>
       </div>
     </section>
 
@@ -955,75 +774,28 @@
         <h2 class="section__title">Mechanical Measurements</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/measurement.png" alt="Measurement setup" />
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/measurement.png" alt="Measurement setup" />
+          <figcaption class="hero-cap">Lab work in calibration, uncertainty, and signal conditioning.</figcaption>
+        </figure>
       </div>
 
       <h3>Overview</h3>
       <p class="detail-text">
-        A sequence of eight labs covering oscilloscopes, accelerometers, signal conditioning,
-        frequency response, material testing, DIC, and system identification, with an emphasis
-        on calibration, uncertainty, and processing noisy experimental data.
+        Eight labs covering calibration, uncertainty, filtering, DIC, and system identification.
       </p>
 
       <h3>Lab Reports</h3>
       <div class="btn-container lab-buttons">
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/ME_149___Lab_1__Oscilloscope__Function_Generator__and_Multimeter__2_ (1).pdf"
-          target="_blank"
-        >
-          Lab 1 — Oscilloscope &amp; Function Generator
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/ME_149___Lab_2_Accelerometer__3_ (1).pdf"
-          target="_blank"
-        >
-          Lab 2 — Accelerometer Characterization
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/Lab_3__Mari_Zampa (1).pdf"
-          target="_blank"
-        >
-          Lab 3 — Signal Conditioning
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/Lab 4 (4).pdf"
-          target="_blank"
-        >
-          Lab 4 — Frequency Response &amp; Filtering
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/Date_ 5_14_2025 (1).pdf"
-          target="_blank"
-        >
-          Lab 5 — Material Testing Poster
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/lab 6_me149 (1).pdf"
-          target="_blank"
-        >
-          Lab 6 — Tensile Testing (ABS &amp; TPU)
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/lab7__4_ (2).pdf"
-          target="_blank"
-        >
-          Lab 7 — Digital Image Correlation
-        </a>
-        <a
-          class="btn btn-ghost"
-          href="./assets/assets/lab8 (2).pdf"
-          target="_blank"
-        >
-          Lab 8 — System Identification
-        </a>
+        <a class="btn btn-ghost" href="./assets/assets/ME_149___Lab_1__Oscilloscope__Function_Generator__and_Multimeter__2_ (1).pdf" target="_blank">Lab 1 Oscilloscope and Function Generator</a>
+        <a class="btn btn-ghost" href="./assets/assets/ME_149___Lab_2_Accelerometer__3_ (1).pdf" target="_blank">Lab 2 Accelerometer Characterization</a>
+        <a class="btn btn-ghost" href="./assets/assets/Lab_3__Mari_Zampa (1).pdf" target="_blank">Lab 3 Signal Conditioning</a>
+        <a class="btn btn-ghost" href="./assets/assets/Lab 4 (4).pdf" target="_blank">Lab 4 Frequency Response and Filtering</a>
+        <a class="btn btn-ghost" href="./assets/assets/Date_ 5_14_2025 (1).pdf" target="_blank">Lab 5 Material Testing Poster</a>
+        <a class="btn btn-ghost" href="./assets/assets/lab 6_me149 (1).pdf" target="_blank">Lab 6 Tensile Testing</a>
+        <a class="btn btn-ghost" href="./assets/assets/lab7__4_ (2).pdf" target="_blank">Lab 7 Digital Image Correlation</a>
+        <a class="btn btn-ghost" href="./assets/assets/lab8 (2).pdf" target="_blank">Lab 8 System Identification</a>
       </div>
     </section>
 
@@ -1031,44 +803,35 @@
     <section id="project-wind-tunnel" class="project-detail">
       <div class="case-header">
         <p class="section__label">Case Study</p>
-        <h2 class="section__title">Bench-Top Wind Tunnel</h2>
+        <h2 class="section__title">Wind Tunnel</h2>
       </div>
 
-      <div class="project-hero">
-        <img src="./assets/assets/main_wind.png" alt="Wind tunnel overview" />
+      <div class="project-hero project-hero--center">
+        <figure class="hero-figure">
+          <img class="hero-img" src="./assets/assets/main_wind.png" alt="Wind tunnel overview" />
+          <figcaption class="hero-cap">Compact tunnel for smoke visualization and small model testing.</figcaption>
+        </figure>
       </div>
 
       <div class="two-col">
         <div>
           <h3>Objective</h3>
-          <p class="detail-text">
-            Build a compact wind tunnel using an off-the-shelf fan, laser-cut honeycomb, and
-            thermoformed acrylic to create a uniform test section for small aero experiments.
-          </p>
+          <p class="detail-text">Build a compact tunnel for repeatable, small scale aero tests.</p>
         </div>
         <div>
-          <h3>Challenges</h3>
-          <p class="detail-text">
-            Achieve uniform flow in a short footprint, integrate a consumer fan, and keep all
-            parts easy to manufacture and assemble.
-          </p>
+          <h3>Constraints</h3>
+          <p class="detail-text">Short overall length, off the shelf fan, simple fabrication methods.</p>
         </div>
       </div>
 
       <div class="two-col">
         <div>
-          <h3>Approach</h3>
-          <p class="detail-text">
-            Fan plenum feeding a settling chamber with honeycomb, followed by a contraction,
-            clear test section, and low-angle diffuser to recover static pressure.
-          </p>
+          <h3>Architecture</h3>
+          <p class="detail-text">Plenum, settling, contraction, test section, diffuser.</p>
         </div>
         <div>
-          <h3>Results</h3>
-          <p class="detail-text">
-            Stable, repeatable flow in the test section suitable for smoke visualization and
-            small aerodynamic tests.
-          </p>
+          <h3>Outcome</h3>
+          <p class="detail-text">Stable flow suitable for visualization and comparisons.</p>
         </div>
       </div>
 
@@ -1076,15 +839,15 @@
       <div class="gallery-3col">
         <figure>
           <img src="./assets/assets/wind4.png" alt="Wind tunnel CAD" />
-          <figcaption>Overall CAD: plenum, contraction, test section, and diffuser.</figcaption>
+          <figcaption>Overall CAD with section transitions.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/wind33.png" alt="Acrylic details" />
-          <figcaption>Acrylic contraction and diffuser with integrated flow straightener.</figcaption>
+          <figcaption>Thermoformed acrylic contraction and diffuser.</figcaption>
         </figure>
         <figure>
           <img src="./assets/assets/wind22.png" alt="Honeycomb panel" />
-          <figcaption>Laser-cut honeycomb used for flow straightening.</figcaption>
+          <figcaption>Laser cut flow straightener.</figcaption>
         </figure>
       </div>
     </section>
@@ -1094,19 +857,14 @@
       <p class="section__label">Contact</p>
       <h2 class="section__title">Get in Touch</h2>
 
-      <p class="detail-text">
-        Reach out for internships, collaborations, or questions about any of these projects.
-      </p>
-
       <div class="contact-container">
         <p><strong>Email</strong><br /><a href="mailto:marizampa@stanford.edu">marizampa@stanford.edu</a></p>
         <p><strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/mari-zampa-580394244" target="_blank">linkedin.com/in/mari-zampa-580394244</a></p>
-        <p><strong>GitHub</strong><br /><a href="https://github.com/mari-zampa" target="_blank">github.com/mari-zampa</a></p>
+        <p><strong>Shape Lab</strong><br /><a href="https://shape.stanford.edu/" target="_blank">https://shape.stanford.edu/</a></p>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>© 2025 Marí Zampa</p>
   </footer>
