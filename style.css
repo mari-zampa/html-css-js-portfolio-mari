@@ -20,14 +20,12 @@
 
 /* BASE */
 html { scroll-behavior: smooth; }
-
 body{
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
   background: radial-gradient(circle at top left, #f9fafb, #f5f5f7 40%, #f3f4f6 100%);
   color: var(--text-main);
   line-height: 1.6;
 }
-
 p{ color: var(--text-muted); }
 
 /* LINKS & BUTTONS */
@@ -36,8 +34,7 @@ a{ text-decoration: none; color: var(--accent-soft); }
 a:hover{ color: var(--accent); }
 
 /* NAVIGATION */
-nav, .nav-links{ display: flex; }
-
+nav{ display: flex; }
 nav{
   position: sticky;
   top: 0;
@@ -50,19 +47,17 @@ nav{
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(229, 231, 235, 0.8);
 }
-
 .nav-links{
+  display: flex;
   gap: 1.8rem;
   list-style: none;
   font-size: 0.92rem;
   font-weight: 500;
 }
-
 .nav-links a{
   position: relative;
   padding-bottom: 4px;
 }
-
 .nav-links a::after{
   content: "";
   position: absolute;
@@ -73,9 +68,7 @@ nav{
   background: var(--accent);
   transition: width 0.18s ease;
 }
-
 .nav-links a:hover::after{ width: 100%; }
-
 .logo{
   font-size: 1.2rem;
   font-weight: 600;
@@ -86,7 +79,6 @@ nav{
 
 /* MOBILE NAV */
 #hamburger-nav{ display: none; }
-
 .hamburger-menu{ position: relative; display: inline-block; }
 .hamburger-icon{
   display: flex;
@@ -95,27 +87,33 @@ nav{
   height: 22px;
   width: 28px;
   cursor: pointer;
+  background: transparent;
+  border: none;
 }
 .hamburger-icon span{
   height: 2px;
   width: 100%;
   background-color: var(--accent);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
+.hamburger-icon.open span:nth-child(1){ transform: translateY(10px) rotate(45deg); }
+.hamburger-icon.open span:nth-child(2){ opacity: 0; }
+.hamburger-icon.open span:nth-child(3){ transform: translateY(-10px) rotate(-45deg); }
+
 .menu-links{
   position: absolute;
   top: 130%;
   right: 0;
   background-color: var(--bg-alt);
-  width: 200px;
+  width: 210px;
   max-height: 0;
   overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 22px 50px rgba(15, 23, 42, 0.18);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  list-style: none;
 }
 .menu-links.open{ max-height: 320px; padding: 0.4rem 0; }
-.menu-links li{ list-style: none; }
 .menu-links a{
   display: block;
   padding: 0.75rem 1.2rem;
@@ -126,7 +124,6 @@ nav{
 /* SECTIONS */
 main{ padding-bottom: 3rem; }
 section{ padding: 4.5rem 9%; }
-
 .section__label{
   text-align: left;
   font-size: 0.75rem;
@@ -149,17 +146,15 @@ section{ padding: 4.5rem 9%; }
   display: flex;
   align-items: center;
 }
-
 .hero-wrap{
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1.05fr 1.25fr;
+  grid-template-columns: 1fr;
   gap: 2.4rem;
   align-items: center;
 }
-
 .hero-card{
   background: rgba(255,255,255,0.78);
   border: 1px solid rgba(229,231,235,0.9);
@@ -167,7 +162,6 @@ section{ padding: 4.5rem 9%; }
   box-shadow: 0 26px 70px rgba(15,23,42,0.10);
   backdrop-filter: blur(16px);
 }
-
 .hero-card__inner{
   padding: 2.1rem 2rem;
   display: grid;
@@ -175,7 +169,6 @@ section{ padding: 4.5rem 9%; }
   gap: 1.8rem;
   align-items: center;
 }
-
 .hero-photo{ display: flex; justify-content: center; }
 .profile-circle{
   width: 220px;
@@ -185,7 +178,6 @@ section{ padding: 4.5rem 9%; }
   box-shadow: 0 20px 50px rgba(15, 23, 42, 0.28);
   border: 3px solid rgba(255, 255, 255, 0.95);
 }
-
 .hero-copy{ text-align: left; }
 .hero-kicker{
   font-size: 0.82rem;
@@ -205,63 +197,32 @@ section{ padding: 4.5rem 9%; }
   font-size: 1.05rem;
   color: var(--text-muted);
   margin-bottom: 1.25rem;
-  max-width: 46ch;
+  max-width: 52ch;
 }
-
 #socials-container{
   margin-top: 1.1rem;
   display: flex;
   align-items: center;
-  gap: 1.3rem;
+  gap: 0.7rem;
+  flex-wrap: wrap;
 }
-
-.hero-media{
-  display: flex;
-  justify-content: center;
+.social-pill{
+  display: inline-flex;
   align-items: center;
-}
-
-.media-card{
-  width: 100%;
-  max-width: 780px;
-  background: rgba(255,255,255,0.78);
-  border: 1px solid rgba(229,231,235,0.9);
-  border-radius: 1.9rem;
-  box-shadow: 0 26px 70px rgba(15,23,42,0.10);
-  padding: 1.1rem;
-}
-
-.media-img{
-  width: 100%;
-  display: block;
-  border-radius: 1.35rem;
-  object-fit: cover;
-  max-height: 420px;
-}
-
-/* best effort “remove white background” look */
-.media-img--blend{
-  mix-blend-mode: multiply;
-  filter: contrast(1.02) saturate(1.02) drop-shadow(0 18px 40px rgba(15,23,42,0.18));
-  background: transparent;
-}
-
-.cap{
-  margin-top: 0.65rem;
+  justify-content: center;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-soft);
+  background: #ffffff;
+  color: var(--accent-soft);
   font-size: 0.86rem;
-  color: #6b7280;
-  text-align: center;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
 }
-
-/* ICONS */
-.icon{
-  cursor: pointer;
-  height: 1.6rem;
-  opacity: 0.9;
-}
-.icon:hover{
-  opacity: 1;
+.social-pill:hover{
   transform: translateY(-1px);
+  background: #111827;
+  color: #ffffff;
+  border-color: #111827;
 }
 
 /* BUTTONS */
@@ -279,6 +240,7 @@ section{ padding: 4.5rem 9%; }
   color: var(--accent);
   font-size: 0.92rem;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  cursor: pointer;
 }
 .btn-primary{
   background: var(--accent);
@@ -333,6 +295,8 @@ section{ padding: 4.5rem 9%; }
   flex-wrap: wrap;
   gap: 1.4rem;
 }
+
+/* ✅ FIX: About card icons back to normal size (this is what your screenshot needs) */
 .details-card{
   flex: 0 0 260px;
   padding: 1.4rem 1.3rem;
@@ -340,13 +304,27 @@ section{ padding: 4.5rem 9%; }
   border-radius: 1.4rem;
   border: 1px solid var(--border-soft);
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 0.9rem;
+  align-items: start;
   text-align: left;
 }
-.details-card h3{ font-size: 1rem; margin-top: 0.7rem; margin-bottom: 0.2rem; }
-.details-card p{ font-size: 0.9rem; }
-.text-container p + p{ margin-top: 0.8rem; }
+.details-card .icon{
+  width: 34px !important;
+  height: 34px !important;
+  object-fit: contain;
+  display: block;
+  margin-top: 0.15rem;
+}
+.details-copy h3{ font-size: 1rem; margin: 0 0 0.2rem 0; }
+.details-copy p{ font-size: 0.9rem; margin: 0; }
 
-/* EXPERIENCE / SKILLS */
+.text-container p + p{ margin-top: 0.8rem; }
+.personality-line{ color: #4b5563; }
+
+/* SKILLS */
 #experience{ background: var(--bg-alt); }
 .experience-details-container{ display: flex; justify-content: center; }
 .skills-grid{
@@ -400,17 +378,24 @@ section{ padding: 4.5rem 9%; }
   flex-direction: column;
   overflow: hidden;
 }
+.project-thumb{
+  background: #ffffff;
+  display: grid;
+  place-items: center;
+}
 .project-thumb img{
   width: 100%;
   height: 170px;
-  object-fit: cover;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 0.5rem;
 }
 .project-body{ padding: 1rem 1.1rem 0.4rem; }
 .project-body h3{ font-size: 1rem; margin-bottom: 0.25rem; }
 .project-body p{ font-size: 0.86rem; }
 .project-footer{ padding: 0.6rem 1.1rem 1rem; }
 
-/* PROJECT DETAIL PAGES */
+/* PROJECT DETAIL */
 .project-detail{
   background: var(--bg-alt);
   border-top: 1px solid var(--border-soft);
@@ -423,7 +408,6 @@ section{ padding: 4.5rem 9%; }
   font-size: 0.98rem;
   margin: 0 auto 0.6rem auto;
 }
-
 .two-col{
   display: grid;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
@@ -433,14 +417,40 @@ section{ padding: 4.5rem 9%; }
 }
 .two-col h3{ font-size: 1.02rem; margin-bottom: 0.4rem; }
 
-/* Hero blocks inside projects */
+.detail-list{
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+}
+.detail-list li{ margin: 0.35rem 0; }
+
+/* Impact callout */
+.impact-callout{
+  max-width: 1100px;
+  margin: 1.6rem auto 0 auto;
+  padding: 1.1rem 1.2rem;
+  border-radius: 1.4rem;
+  border: 1px dashed rgba(17,24,39,0.25);
+  background: rgba(249,250,251,0.7);
+}
+.impact-callout h3{
+  margin: 0 0 0.6rem 0;
+  font-size: 1.02rem;
+}
+.impact-list{
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+.impact-list li{ margin: 0.4rem 0; }
+
+/* Hero blocks */
 .project-hero{
   max-width: 1100px;
   margin: 0 auto 1.4rem auto;
   display: grid;
   gap: 1.25rem;
 }
-
 .project-hero figure{
   margin: 0;
   background: #ffffff;
@@ -448,29 +458,27 @@ section{ padding: 4.5rem 9%; }
   border-radius: 1.4rem;
   padding: 1rem;
   box-shadow: 0 16px 34px rgba(15,23,42,0.08);
+  overflow: hidden;
 }
-
 .project-hero img{
   width: 100%;
   display: block;
   border-radius: 1.05rem;
-  object-fit: cover;
-  max-height: 520px;
+  object-fit: contain;
+  height: auto;
+  max-height: 560px;
+  background: #ffffff;
+  border: 1px solid rgba(229,231,235,0.85);
+  padding: 0.6rem;
 }
-
 .project-hero figcaption{
   margin-top: 0.55rem;
   font-size: 0.86rem;
   color: #6b7280;
   text-align: center;
 }
-
-/* Center single hero */
 .project-hero--center{ grid-template-columns: 1fr; }
-.hero-figure{
-  max-width: 980px;
-  margin: 0 auto;
-}
+.hero-figure{ max-width: 980px; margin: 0 auto; }
 .hero-figure--small{ max-width: 520px; }
 .hero-img{ width: 100%; height: auto; border-radius: 1.2rem; }
 .hero-cap{
@@ -479,15 +487,17 @@ section{ padding: 4.5rem 9%; }
   color: #6b7280;
   text-align: center;
 }
-
-/* Two images centered and side by side */
 .project-hero--two{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  align-items: start;
+  align-items: stretch;
+}
+.project-hero--two figure{
+  display: flex;
+  flex-direction: column;
 }
 .project-hero--two img{
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  width: 100%;
+  max-height: 520px;
 }
 
 /* Galleries */
@@ -499,7 +509,6 @@ section{ padding: 4.5rem 9%; }
 }
 .gallery-3col{ grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .gallery-2col{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
-
 .gallery-3col figure, .gallery-2col figure{
   margin: 0;
   background: #ffffff;
@@ -507,17 +516,17 @@ section{ padding: 4.5rem 9%; }
   border-radius: 1.4rem;
   padding: 0.95rem;
   box-shadow: 0 16px 34px rgba(15,23,42,0.07);
+  overflow: hidden;
 }
-
 .gallery-3col img, .gallery-2col img{
   width: 100%;
   border-radius: 1.05rem;
   border: 1px solid rgba(229,231,235,0.85);
-  box-shadow: none;
-  object-fit: cover;
-  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  height: auto;
+  background: #ffffff;
+  padding: 0.6rem;
 }
-
 .gallery-3col figcaption, .gallery-2col figcaption{
   margin-top: 0.55rem;
   font-size: 0.84rem;
@@ -525,13 +534,19 @@ section{ padding: 4.5rem 9%; }
   text-align: center;
 }
 
-/* IFRAME */
-.gallery-3col iframe{
+/* Video */
+.video-frame{
   width: 100%;
-  min-height: 220px;
   border-radius: 1.05rem;
-  border: none;
-  box-shadow: none;
+  overflow: hidden;
+  border: 1px solid rgba(229,231,235,0.85);
+  background: #ffffff;
+}
+.video-frame iframe{
+  width: 100%;
+  height: 240px;
+  border: 0;
+  display: block;
 }
 
 /* Sub-headings */
@@ -581,7 +596,6 @@ footer{
 
 /* RESPONSIVE */
 @media screen and (max-width: 1100px){
-  .hero-wrap{ grid-template-columns: 1fr; }
   .hero{ min-height: auto; }
   .hero-card__inner{ grid-template-columns: 1fr; text-align: center; }
   .hero-copy{ text-align: center; }
@@ -589,14 +603,12 @@ footer{
   #socials-container{ justify-content: center; }
   .profile-circle{ width: 210px; height: 210px; }
 }
-
 @media screen and (max-width: 1024px){
   .section-container{ grid-template-columns: 1fr; }
   .skills-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .two-col{ grid-template-columns: 1fr; }
   .project-hero--two{ grid-template-columns: 1fr; }
 }
-
 @media screen and (max-width: 900px){
   nav#desktop-nav{ display: none; }
   #hamburger-nav{
@@ -610,7 +622,6 @@ footer{
   footer{ padding: 1.2rem 7%; }
   .skills-grid{ grid-template-columns: 1fr; }
 }
-
 @media screen and (max-width: 600px){
   section{ padding: 3.5rem 6%; }
   .hero-title{ font-size: 2.35rem; }
@@ -618,82 +629,178 @@ footer{
   .project-card{ flex: 0 0 260px; }
   .gallery-3col{ grid-template-columns: 1fr; }
   .gallery-2col{ grid-template-columns: 1fr; }
+  .video-frame iframe{ height: 220px; }
 }
-/* --- DROP THIS AT THE END OF YOUR style.css (or replace the matching blocks) --- */
+/* ================================
+   SELECTED WORKS (PROJECT CARDS)
+   Make thumbs look filled + clean
+================================ */
 
-/* 1) HERO RIGHT: remove the car completely on the first page */
-.hero-media { display: none; }            /* hides the entire right card */
-.hero-wrap { grid-template-columns: 1fr; } /* make hero full width */
-
-/* 2) GLOBAL IMAGE FIT FIX
-   Make images NEVER get cropped unless you explicitly opt in */
-.project-hero img,
-.gallery-3col img,
-.gallery-2col img,
-.project-thumb img,
-.hero-figure img,
-.media-img{
-  object-fit: contain !important;
-  height: auto !important;
-  max-height: none !important;
-}
-
-/* remove forced aspect ratios that were causing cropping */
-.project-hero--two img,
-.gallery-3col img,
-.gallery-2col img{
-  aspect-ratio: auto !important;
-}
-
-/* 3) NEATER CARDS: give images a consistent frame so they look aligned */
-.project-hero figure,
-.gallery-3col figure,
-.gallery-2col figure{
+/* stronger, consistent thumbnail frame */
+.project-card{
   overflow: hidden;
 }
 
-.project-hero img,
-.gallery-3col img,
-.gallery-2col img{
+.project-thumb{
   background: #ffffff;
-  border: 1px solid rgba(229,231,235,0.85);
-  border-radius: 1.05rem;
-  padding: 0.6rem;                 /* creates clean white margin around irregular images */
+  height: 178px;                 /* consistent card height */
+  padding: 0;                    /* remove the white padding frame */
   display: block;
 }
 
-/* 4) PROJECT CARD THUMBNAILS
-   If you want thumbnails to show the full image too (no crop) */
-.project-thumb{
-  background: #ffffff;
-}
+/* default: fill the frame */
 .project-thumb img{
-  object-fit: contain !important;
-  height: 170px;                   /* keep card heights consistent */
-  background: #ffffff;
-  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;  /* fills the frame */
+  padding: 0 !important;         /* remove old padding */
+  border: 0;
+  border-radius: 0;
 }
 
-/* 5) TWO IMAGE HERO ROWS: keep them centered, same visual weight */
-.project-hero--two{
-  align-items: stretch;
+/* optional: slightly round only the top corners of the image */
+.project-thumb img{
+  border-top-left-radius: 1.4rem;
+  border-top-right-radius: 1.4rem;
 }
-.project-hero--two figure{
+
+/* ---- per-card “don’t crop the important part” helpers ---- */
+.project-thumb img.thumb-top{ object-position: center 20%; }
+.project-thumb img.thumb-center{ object-position: center; }
+.project-thumb img.thumb-bottom{ object-position: center 80%; }
+.project-thumb img.thumb-left{ object-position: 30% center; }
+.project-thumb img.thumb-right{ object-position: 70% center; }
+
+/* If a specific image REALLY shouldn’t be cropped, use contain */
+.project-thumb img.thumb-contain{
+  object-fit: contain !important;
+  background: #ffffff;
+}
+/* PROJECT CARD THUMBNAILS — show full image (no crop) */
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;      /* keep your consistent card height */
+  overflow: hidden;
+  background: #f3f4f6;       /* subtle background behind letterboxing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* ✅ shows whole image */
+  object-position: center;
+  display: block;
+}
+/* ===== Selected Work (Projects scroll) ===== */
+.projects-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 360px);
+  gap: 28px;
+  overflow-x: auto;
+  padding: 12px 6px 18px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.projects-scroll::-webkit-scrollbar {
+  height: 10px;
+}
+.projects-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.18);
+}
+.projects-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 999px;
+}
+
+.project-card {
+  scroll-snap-align: start;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
   display: flex;
   flex-direction: column;
 }
-.project-hero--two img{
+
+/* THIS is the key: whole image visible, no cropping */
+.project-thumb {
+  height: 270px;                 /* gives you the tall, clean look in your screenshot */
+  background: #f3f4f6;           /* subtle “letterbox” background */
+  padding: 14px;                 /* that nice margin around the image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumb img {
   width: 100%;
-  max-height: 520px;               /* prevents one giant vertical image from dominating */
+  height: 100%;
+  object-fit: contain;           /* ✅ shows entire image */
+  object-position: center;
+  display: block;
+  border-radius: 18px;           /* rounded inner image like your screenshot */
 }
 
-/* 6) OPTIONAL: if any single hero image is still too tall, cap it */
-.hero-figure .hero-img{
-  max-height: 560px;
+.project-body {
+  padding: 18px 18px 10px;
 }
 
-/* 7) MOBILE: keep spacing clean */
-@media screen and (max-width: 1024px){
-  .project-thumb img{ height: 160px; }
-  .project-hero--two img{ max-height: 520px; }
+.project-body h3 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  line-height: 1.2;
 }
+
+.project-body p {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.65);
+  line-height: 1.35;
+}
+
+.project-footer {
+  padding: 12px 18px 18px;
+  margin-top: auto;
+}
+
+/* Small ghost button used in cards (keep if you don’t already have it) */
+.btn.btn-ghost-sm {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Optional: slightly tighter on smaller screens */
+@media (max-width: 700px) {
+  .project-thumb { height: 240px; }
+  .projects-scroll { grid-auto-columns: minmax(260px, 320px); }
+}
+/* PROJECT THUMBNAILS — handle landscape + portrait correctly */
+.project-thumb {
+  height: 320px;              /* ⬆️ taller so vertical images fit */
+  background: #f3f4f6;
+  padding: 18px;              /* slightly more breathing room */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-thumb img {
+  max-width: 100%;
+  max-height: 100%;           /* 🔑 prevents vertical cutoff */
+  width: auto;
+  height: auto;
+  object-fit: contain;        /* no cropping */
+  object-position: center;
+  display: block;
+  border-radius: 18px;
+}
+
